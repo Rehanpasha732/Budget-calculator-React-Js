@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.app {
+    background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+    height: 100vh;
+    width: 100%;
+}
+
+ul {
+    display: block;
+    width: 100%;
+    height: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li:nth-child(1) {
+    position: absolute;
+    left: 10%;
+    height: 30px;
+    width: 30px;
+    background: rgba(255, 255, 255, .2);
+}
+
+li:nth-child(2) {
+    position: absolute;
+    left: 30%;
+    height: 45px;
+    width: 45px;
+    background: rgba(255, 255, 255, .2);
+}
+
+li:nth-child(3) {
+    position: absolute;
+    left: 50%;
+    height: 70px;
+    width: 70px;
+    background: rgba(255, 255, 255, .2);
+}
+
+li:nth-child(4) {
+    position: absolute;
+    left: 80%;
+    height: 20px;
+    width: 20px;
+    background: rgba(255, 255, 255, .2);
+}
+
+li {
+    animation: animate 15s linear 1s infinite;
+}
+
+@keyframes animate {
+    from {
+        transform: translateY(+1500%) rotate(180deg)
+    }
+
+    to {
+        transform: translateY(-150%) rotate(360deg)
+    }
+}
+
+.budget {
+    width: 100%;
+    height: 400px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.budget h1 {
+    text-align: center;
+    color: white;
+}
+
+.data {
+    position: absolute;
+    left: 18%;
+    width: 800px;
+    height: 400spx;
+    margin-top: 30px;
+    background-color: #203A43;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.49);
+}
+
+input {
+    /* margin: 20px; */
+    margin: 10px auto;
+}
+
+b {
+    padding-left: 20px;
+}
+
+
+
+.input1 {
+    /* padding-right: 20px; */
+    width: 200px;
+
+}
+
+.input1:focus {
+    outline: none;
+}
+
+.input2 {
+    width: 220px;
+    border: none;
+
+
+}
+
+.input2:focus {
+    outline: none;
+}
+
+input {
+    border: none;
+    margin: 50px;
+    height: 40px;
+    border-radius: 7px;
+    padding: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #1d2e34;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: white;
+    -webkit-appearance: none;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+
+
+}
+
+input:hover input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input:placeholder-shown {
+    padding: 10px;
+}
+
+b {
+    color: white;
+    font-family: serif;
+}
+
+/* buttons */
+.add {
+    margin-left: 45%;
+    padding: 10px;
+    background-color: #2C5364;
+    color: white;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.remove {
+    margin-left: 45%;
+    padding: 10px;
+    background-color: #2C5364;
+    color: white;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.dlt,
+.edit {
+    padding: 5px;
+    color: white;
+    width: 50px;
+    margin-left: 5px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.dltdis{
+    opacity: 0.1;
+    padding: 5px;
+    color: white;
+    width: 50px;
+    margin-left: 5px;
+    background-color: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* .dlt {
+
+    margin-bottom: 5px;
+    border-radius: 5px;
+    width: 100px;
+    padding-left: 5px;
+    background: linear-gradient(135deg, rgba(214, 187, 187, 0.1), rgba(200, 155, 155, 0));
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+} */
+
+
+
+.remove {
+    margin-bottom: 10px;
+    width: 300px;
+    margin-left: 250px;
+    background: linear-gradient(135deg, rgba(207, 167, 167, 0.1), rgba(234, 188, 188, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+}
+
+.removedis{
+    opacity: 0.4;
+    margin-bottom: 10px;
+    width: 300px;
+    margin-left: 250px;
+    background: linear-gradient(135deg, rgba(207, 167, 167, 0.1), rgba(234, 188, 188, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+button:hover {
+    cursor: pointer;
+}
+
+table {
+    /* background-color: aqua; */
+    padding: 20px;
+    margin: 20px auto;
+    /* backdrop-filter: blur(10px); */
+    /* -webkit-backdrop-filter: blur(10px); */
+    /* background: linear-gradient(135deg, rgba(225, 189, 189, 0.1), rgba(237, 179, 179, 0)); */
+    width: 50%;
+    /* box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
+
+}
+
+td {
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    height: 30px;
+    width: 100px;
+    margin-left: 600px;
+    /* color: white;
+    width: 100px;
+    height: 20px; */
+    /* padding-left: 20px;
+    padding-bottom: 5px; */
+    /* border-radius: 5px;
+    padding: 20px; */
+    /* margin: 30px; */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); */
+    }
+
+    .data {
+        margin-top: 30px;
+        padding-top: 30px;
+        width: 350px;
+        margin: 0px auto;
+        margin-left: -20px;
+        margin-top: 30px;
+        background-color: #0F2027;
+    }
+
+    b {
+        /* margin-top: 10px !important; */
+        margin-left: 120px;
+    }
+
+    input {
+        margin-right: 0px;
+        margin-left: 70px;
+        margin-bottom: 30px;
+    }
+
+    button {
+        margin-right: 0px;
+        margin-left: 140px;
+        margin-top: 30px;
+    }
+
+    .BTN_2 {
+        margin: 10px auto;
+        margin-left: 25px;
+    }
+
+    .main {
+        height: 100%;
+
+
+    }
+
+    td {
+        padding-bottom: 0px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 200px;
+    }
+
+    .dlt {
+        margin-bottom: -50px;
+        margin-left: 30px;
+        margin-top: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    b {
+        margin-bottom: 0px;
+        margin-top: 50px !important;
+    }
+
+    .remove {
+        margin-left: 30px;
+        background-color: #0F2027;
+    }
+    .edit{
+      margin-left: 100px;
+      margin-top: -75px;
+    }
+}
+
+
+
+@media only screen and (max-width: 360px) {
+    .data {
+        width: 300px;
+        margin-left: -30px;
+        height: 100%;
+    }
+
+
+}
